@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCO HOME | Interior Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome ለጥቃቅን አይኮኖች -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. FIXED HEADER SECTION -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-text">COCO HOME</span>
+        </div>
+        <nav class="nav-links">
+           <a href="index.html">HOME</a>
+           <a href="contact.html">CONTACT</a>
+           <a href="support.html">SUPPORT</a>
+           <a href="location.html">LOCATION</a>
+           <a href="about.html">ABOUT US</a>
+        </nav>
+        <button class="btn-buy">Buy Now</button>
+    </header>
+
+    <!-- 2. HERO SECTION WITH SEARCH BAR -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay">
+            <!-- የበስተጀርባ ዋና የሳሎን ምስል እዚህ ይገባል -->
+            <img src="images/hero.png" alt="Luxury Interior Background" class="hero-bg-img">
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">COCO HOME<br>INTERIOR MODERN</h1>
+            <a href="#products" class="hero-search-link">Search <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Floating Filter Card -->
+        <div class="filter-card">
+            <div class="filter-group">
+                <span class="filter-label">City Street <i class="fa-solid fa-chevron-down"></i></span>
+                <span class="filter-value">234 STREET</span>
+            </div>
+            <div class="filter-divider"></div>
+            <div class="filter-group">
+                <span class="filter-label">Typology Of Rent <i class="fa-solid fa-chevron-down"></i></span>
+                <span class="filter-value">Home & Apart</span>
+            </div>
+            <div class="filter-divider"></div>
+            <div class="filter-group">
+                <span class="filter-label">Price <i class="fa-solid fa-chevron-down"></i></span>
+                <span class="filter-value">$100</span>
+            </div>
+            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </div>
+    </section>
+
+    <!-- 3. PRODUCTS CAROUSEL SECTION -->
+    <section id="products" class="products-section">
+        <!-- Category Navigation Tabs -->
+        <div class="category-tabs">
+            <button class="tab-btn" data-target="table">TABLE</button>
+            <button class="tab-btn" data-target="nakas">NAKAS</button>
+            <button class="tab-btn active" data-target="chair">CHAIR DESIGN</button>
+            <button class="tab-btn" data-target="bed">BED</button>
+            <button class="tab-btn" data-target="cupboard">CUPBOARD</button>
+        </div>
+
+        <div class="carousel-container">
+            
+            <div class="carousel-track" data-category="chair" style="display: flex;">
+                <div class="product-card"><figcaption class="card-info"><h3>CHAIR ONE</h3><div class="card-meta"><span class="price">$110</span></div></figcaption><div class="product-img-holder"><img src="images/chair 1.png" alt="Chair 1"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>MODERN ARMCHAIR</h3><div class="card-meta"><span class="price">$130</span></div></figcaption><div class="product-img-holder"><img src="images/chair 2.png" alt="Chair 2"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>SOFA MODERN</h3><div class="card-meta"><span class="price">$145</span></div></figcaption><div class="product-img-holder"><img src="images/chair 3.png" alt="Sofa Focus"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>ROTAN CHAIR</h3><div class="card-meta"><span class="price">$102</span></div></figcaption><div class="product-img-holder"><img src="images/chair 4.png" alt="Chair 3"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>ELEGANT CHAIR</h3><div class="card-meta"><span class="price">$160</span></div></figcaption><div class="product-img-holder"><img src="images/chair 5.png" alt="Chair 4"></div></div>
+            </div>
+
+            <div class="carousel-track" data-category="table" style="display: none;">
+                <div class="product-card"><figcaption class="card-info"><h3>TABLE ONE</h3><div class="card-meta"><span class="price">$210</span></div></figcaption><div class="product-img-holder"><img src="images/table1.png" alt="Table 1"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>WOODEN TABLE</h3><div class="card-meta"><span class="price">$250</span></div></figcaption><div class="product-img-holder"><img src="images/table2.png" alt="Table 2"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>LUXURY TABLE</h3><div class="card-meta"><span class="price">$320</span></div></figcaption><div class="product-img-holder"><img src="images/table3.png" alt="Table 3"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>OFFICE TABLE</h3><div class="card-meta"><span class="price">$180</span></div></figcaption><div class="product-img-holder"><img src="images/table4.png" alt="Table 4"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>GLASS TABLE</h3><div class="card-meta"><span class="price">$290</span></div></figcaption><div class="product-img-holder"><img src="images/table5.png" alt="Table 5"></div></div>
+            </div>
+
+            <div class="carousel-track" data-category="nakas" style="display: none;">
+                <div class="product-card"><figcaption class="card-info"><h3>NAKAS SIMPLE</h3><div class="card-meta"><span class="price">$70</span></div></figcaption><div class="product-img-holder"><img src="images/nakas1.png" alt="Nakas 1"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>CLASSIC NAKAS</h3><div class="card-meta"><span class="price">$85</span></div></figcaption><div class="product-img-holder"><img src="images/nakas2.png" alt="Nakas 2"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>PREMIUM NAKAS</h3><div class="card-meta"><span class="price">$120</span></div></figcaption><div class="product-img-holder"><img src="images/nakas3.png" alt="Nakas 3"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>MINI NAKAS</h3><div class="card-meta"><span class="price">$65</span></div></figcaption><div class="product-img-holder"><img src="images/nakas4.png" alt="Nakas 4"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>SMART NAKAS</h3><div class="card-meta"><span class="price">$150</span></div></figcaption><div class="product-img-holder"><img src="images/nakas5.png" alt="Nakas 5"></div></div>
+            </div>
+
+            <div class="carousel-track" data-category="bed" style="display: none;">
+                <div class="product-card"><figcaption class="card-info"><h3>BED ONE</h3><div class="card-meta"><span class="price">$400</span></div></figcaption><div class="product-img-holder"><img src="images/bed1.png" alt="Bed 1"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>COZY BED</h3><div class="card-meta"><span class="price">$450</span></div></figcaption><div class="product-img-holder"><img src="images/bed2.png" alt="Bed 2"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>KING SIZE BED</h3><div class="card-meta"><span class="price">$500</span></div></figcaption><div class="product-img-holder"><img src="images/bed3.png" alt="Bed 3"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>MODERN BED</h3><div class="card-meta"><span class="price">$480</span></div></figcaption><div class="product-img-holder"><img src="images/bed4.png" alt="Bed 4"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>ROYAL BED</h3><div class="card-meta"><span class="price">$650</span></div></figcaption><div class="product-img-holder"><img src="images/bed5.png" alt="Bed 5"></div></div>
+            </div>
+
+            <div class="carousel-track" data-category="cupboard" style="display: none;">
+                <div class="product-card"><figcaption class="card-info"><h3>SIMPLE CABINET</h3><div class="card-meta"><span class="price">$220</span></div></figcaption><div class="product-img-holder"><img src="images/cupboard1.png" alt="Cupboard 1"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>LARGE CUPBOARD</h3><div class="card-meta"><span class="price">$380</span></div></figcaption><div class="product-img-holder"><img src="images/cupboard2.png" alt="Cupboard 2"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>WOODEN CUPBOARD</h3><div class="card-meta"><span class="price">$350</span></div></figcaption><div class="product-img-holder"><img src="images/cupboard3.png" alt="Cupboard 3"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>WALL CABINET</h3><div class="card-meta"><span class="price">$410</span></div></figcaption><div class="product-img-holder"><img src="images/cupboard4.png" alt="Cupboard 4"></div></div>
+                <div class="product-card"><figcaption class="card-info"><h3>LUXURY WARDROBE</h3><div class="card-meta"><span class="price">$520</span></div></figcaption><div class="product-img-holder"><img src="images/cupboard5.png" alt="Cupboard 5"></div></div>
+            </div>
+
+        </div>
+
+        <!-- Slider Indicators/Dots -->
+        <div class="slider-dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot active" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+    </section>
+          
+
+    <!-- 4. CATEGORIES & INFORMATION GRID -->
+    <section class="info-section">
+        <h2 class="section-heading">CATEGORIES & INFORMATION</h2>
+        
+        <div class="info-grid">
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-house-chimney"></i></div>
+                <span class="grid-text">HOME DESIGN</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-info"></i></div>
+                <span class="grid-text">INFORMATION PRODUCT</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                <span class="grid-text">LOCATION STORE</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-couch"></i></div>
+                <span class="grid-text">FURNITURE DESIGN</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-wrench"></i></div>
+                <span class="grid-text">MAINTENANCE</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                <span class="grid-text">CUSTOMER SERVICES</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
+                <span class="grid-text">INTERIOR DESIGN</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-file-invoice"></i></div>
+                <span class="grid-text">ADMINISTRATION</span>
+            </div>
+            <div class="grid-item">
+                <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                <span class="grid-text">BLOG</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/07/07/15/20260707152111-B6OKIUZM.js" defer></script>
+    
+</body>
+</html>
